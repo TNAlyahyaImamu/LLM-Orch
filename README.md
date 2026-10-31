@@ -100,14 +100,19 @@ LLM-Orch/
 ### Prerequisites
 
 - MATLAB R2015a or later
-- No additional toolboxes required
+- Statistics and Machine Learning Toolbox is required for `randsample` in the synthetic-data fallback generator.
+- Other toolbox dependencies have not been fully audited.
 
 ### Installation
 
 ```bash
-git clone https://github.com/Tasniemalyahya/LLM-Orch-Simulation.git
-cd LLM-Orch-Simulation
+git clone https://github.com/TNAlyahyaImamu/LLM-Orch.git
+cd LLM-Orch
 ```
+
+### Simulation scope
+
+The MATLAB code provides a simulation of the proposed orchestration framework. Model identifiers such as GPT-4 and GPT-3.5-Turbo appear in the configuration, but this repository has not been verified to make live LLM API calls. The configured 1 ms inference latency is a simulation parameter, **not a measured latency for those models**. Reported results should not be treated as independently reproduced until the code and experimental settings have been validated.
 
 ### Run the Simulation
 
@@ -161,7 +166,7 @@ The repository includes synthetic datasets that mimic the structure of:
 - **Alibaba Cluster Trace (2023)** - 10,000 tasks, 200 nodes
 - **Google Borg Trace (2022)** - 8,000 tasks, 200 nodes
 
-These datasets are automatically generated when first run, requiring no external downloads.
+The repository includes two pre-generated synthetic `.mat` datasets in the repository root. `load_datasets.m` attempts to load these files first. If loading fails, the script generates a smaller fallback dataset (500 tasks and 50 nodes), which is **not equivalent to the full-scale experiments**. Check the MATLAB console output to confirm which dataset was used.
 
 ### Dataset Characteristics
 
