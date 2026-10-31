@@ -5,7 +5,7 @@ function [alibaba, google_borg] = load_datasets()
 
 % Try to load existing datasets
 try
-    load('./Datasets/alibaba_trace_2023_synthetic.mat', 'alibaba_dataset');
+    load('./alibaba_trace_2023_synthetic.mat', 'alibaba_dataset');
     alibaba = alibaba_dataset;
     alibaba.num_tasks = length(alibaba.tasks.task_id);
     alibaba.num_nodes = length(alibaba.nodes.machine_id);
@@ -28,7 +28,7 @@ end
 
 % Try to load existing datasets
 try
-    load('./Datasets/google_borg_trace_2022_synthetic.mat', 'borg_dataset');
+    load('./google_borg_trace_2022_synthetic.mat', 'borg_dataset');
     google_borg = borg_dataset;
     google_borg.num_tasks = length(google_borg.tasks.task_id);
     google_borg.num_nodes = length(google_borg.nodes.machine_id);
