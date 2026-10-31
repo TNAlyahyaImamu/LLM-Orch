@@ -1,0 +1,635 @@
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 11:46:22
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 10000
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 30
+  - LLM Temperature: 0.2
+
+Loading datasets...
+Generated synthetic alibaba dataset.
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/30...{Reference to non-existent field 'mem_gb_per_node'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SemRP>generate_prompt', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m', 72)" style="font-weight:bold">SemRP>generate_prompt</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m',72,0)">line 72</a>)
+prompt = sprintf([
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SemRP', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m', 21)" style="font-weight:bold">SemRP</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m',21,0)">line 21</a>)
+prompt = generate_prompt(state, P_t, D_t, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 136)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',136,0)">line 136</a>)
+        [allocation_plan, A_t, prompt_semrp] = SemRP(state, P_t, D_t, cfg);
+} 
+Main
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 11:48:19
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 10000
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 30
+  - LLM Temperature: 0.2
+
+Loading datasets...
+Generated synthetic alibaba dataset.
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/30...{Undefined function 'contains' for input arguments of type 'char'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IGWA', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m', 45)" style="font-weight:bold">IGWA</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m',45,0)">line 45</a>)
+    if contains(directive_text, 'prioritize', 'IgnoreCase', true)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 148)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',148,0)">line 148</a>)
+        % ====================================================================
+} 
+Main
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 11:54:48
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 10000
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 30
+  - LLM Temperature: 0.2
+
+Loading datasets...
+Generated synthetic alibaba dataset.
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/30...{Reference to non-existent field 'iteration'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CFL', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m', 43)" style="font-weight:bold">CFL</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m',43,0)">line 43</a>)
+new_state.iteration = state.iteration + 1;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 156)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',156,0)">line 156</a>)
+        [new_state, feedback_signal] = CFL(state, R_t, W_t, D_t, cfg);
+} 
+Main
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 13:03:40
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 10000
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 30
+  - LLM Temperature: 0.2
+
+Loading datasets...
+Generated synthetic alibaba dataset.
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/30...{Reference to non-existent field 'updated_workflow'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CFL>generate_updated_prompts', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m', 85)" style="font-weight:bold">CFL>generate_updated_prompts</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m',85,0)">line 85</a>)
+prompts.igwa = sprintf(...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CFL', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m', 54)" style="font-weight:bold">CFL</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m',54,0)">line 54</a>)
+new_state.updated_prompts = generate_updated_prompts(new_state, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 156)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',156,0)">line 156</a>)
+        [new_state, feedback_signal] = CFL(state, R_t, W_t, D_t, cfg);
+} 
+Main
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 13:09:08
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 10000
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 30
+  - LLM Temperature: 0.2
+
+Loading datasets...
+Generated synthetic alibaba dataset.
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 2/30... Latency=2830.3ms, SLA=0.0%, Util=-0.87
+  Run 3/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 4/30... Latency=2830.6ms, SLA=0.0%, Util=-0.87
+  Run 5/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 6/30... Latency=2830.6ms, SLA=0.0%, Util=-0.87
+  Run 7/30... Latency=2830.3ms, SLA=0.0%, Util=-0.87
+  Run 8/30... Latency=2830.2ms, SLA=0.0%, Util=-0.87
+  Run 9/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 10/30... Latency=2830.7ms, SLA=0.0%, Util=-0.87
+  Run 11/30... Latency=2830.4ms, SLA=0.0%, Util=-0.87
+  Run 12/30... Latency=2830.7ms, SLA=0.0%, Util=-0.87
+  Run 13/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 14/30... Latency=2830.6ms, SLA=0.0%, Util=-0.87
+  Run 15/30... Latency=2830.7ms, SLA=0.0%, Util=-0.87
+  Run 16/30... Latency=2830.4ms, SLA=0.0%, Util=-0.87
+  Run 17/30... Latency=2830.4ms, SLA=0.0%, Util=-0.87
+  Run 18/30... Latency=2830.4ms, SLA=0.0%, Util=-0.87
+  Run 19/30... Latency=2830.5ms, SLA=0.0%, Util=-0.87
+  Run 20/30... Latency=2830.3ms, SLA=0.0%, Util=-0.87
+  Run 21/30... Latency=2830.6ms, SLA=0.0%, Util=-0.87
+  Run 22/30... Latency=2830.3ms, SLA=0.0%, Util=-0.87
+  Run 23/30... Latency=2830.3ms, SLA=0.0%, Util=-0.87
+  Run 24/30... Latency=2830.2ms, SLA=0.0%, Util=-0.87
+  Run 25/30... Latency=2830.4ms, SLA=0.0%, Util=-0.87
+  Run 26/30...{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dag_topological_sort', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\dag_topological_sort.m', 35)" style="font-weight:bold">dag_topological_sort</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\dag_topological_sort.m',35,0)">line 35</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IGWA', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m', 32)" style="font-weight:bold">IGWA</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m',32,0)">line 32</a>)
+[order, levels] = dag_topological_sort(num_tasks, parent_list);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 141)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',141,0)">line 141</a>)
+        % STEP 3.3: IGWA - Instruction-Guided Workflow Adapter
+} 
+=============================================================
+LLM-Orch: Large Language Model-Driven Serverless Orchestration
+Simulation Execution - MATLAB 2015a
+=============================================================
+Start Time: 27-Aug-2026 15:14:02
+
+Configuration loaded:
+  - Nodes: 200
+  - Tasks: 500
+  - Simulation Duration: 3600 seconds
+  - Number of Runs: 2
+  - LLM Temperature: 0.2
+
+Loading datasets...
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 80)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',80,0)">line 80</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 81)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',81,0)">line 81</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 82)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',82,0)">line 82</a>)] 
+[Warning: Alibaba dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 24)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',24,0)">line 24</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 85)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',85,0)">line 85</a>)] 
+Generated synthetic alibaba dataset.
+[Warning: Google Borg dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 85)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',85,0)">line 85</a>)] 
+Generated synthetic google_borg dataset.
+? Alibaba: 5000 tasks, 200 nodes
+? Google Borg: 5000 tasks, 200 nodes
+
+=============================================================
+Running LLM-Orch Framework
+=============================================================
+
+
+--- Processing alibaba dataset ---
+  Run 1/2...{Undefined function or variable 'generate_prompt'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SemRP', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m', 7)" style="font-weight:bold">SemRP</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m',7,0)">line 7</a>)
+prompt = generate_prompt(state, P_t, D_t, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 138)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',138,0)">line 138</a>)
+        [allocation_plan, A_t, prompt_semrp] = SemRP(state, P_t, D_t, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+[Warning: Alibaba dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 24)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',24,0)">line 24</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic alibaba dataset.
+[Warning: Google Borg dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic google_borg dataset.
+? Alibaba: 500 tasks, 200 nodes
+
+Running simulation...
+  Run 1/2...{Undefined function or variable 'generate_prompt'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SemRP', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m', 7)" style="font-weight:bold">SemRP</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SemRP.m',7,0)">line 7</a>)
+prompt = generate_prompt(state, P_t, D_t, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 106)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',106,0)">line 106</a>)
+    [allocation_plan, A_t, ~] = SemRP(state, P_t, D_t, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+[Warning: Alibaba dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 24)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',24,0)">line 24</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic alibaba dataset.
+[Warning: Google Borg dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic google_borg dataset.
+? Alibaba: 500 tasks, 200 nodes
+
+Running simulation...
+  Run 1/2... Latency=2748.3ms, SLA=0.0%
+  Run 2/2... Latency=2748.4ms, SLA=0.0%
+
+? Simulation completed in 10.12 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 2748.3 ± 0.0 ms
+Average SLA: 0.0 ± 0.0 %
+=============================================================
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+[Warning: Alibaba dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 24)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',24,0)">line 24</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic alibaba dataset.
+[Warning: Google Borg dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic google_borg dataset.
+? Alibaba: 500 tasks, 200 nodes
+
+Running simulation...
+  Run 1/2...  [DEBUG] SLA Calculation:
+    Total tasks: 500
+    Met deadlines: 0
+    Average latency: 2732.929 ms
+    Deadline map: High=50ms, Medium=200ms, Low=500ms
+ Latency=2732.9ms, SLA=0.0%
+  Run 2/2... Latency=2732.1ms, SLA=0.0%
+
+? Simulation completed in 6.23 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 2732.5 ± 0.6 ms
+Average SLA: 0.0 ± 0.0 %
+=============================================================
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+[Warning: Alibaba dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 24)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',24,0)">line 24</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic alibaba dataset.
+[Warning: Google Borg dataset not found. Generating synthetic data...] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)" style="font-weight:bold">load_datasets</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m',46,0)">line 46</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 71)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',71,0)">line 71</a>)] 
+Generated synthetic google_borg dataset.
+? Alibaba: 500 tasks, 200 nodes
+
+Running simulation...
+  Run 1/2...  [DEBUG] SLA Debug:
+    Total tasks: 500
+    Met deadlines: 0
+    SLA: 0.0%
+    Avg latency: 693746.5 ms
+    Priority distribution:
+      High (1): 171 tasks (deadline: 50ms)
+      Medium (2): 162 tasks (deadline: 200ms)
+      Low (3): 167 tasks (deadline: 500ms)
+    Avg durations:
+      High: 2893.4 ms
+      Medium: 2737.5 ms
+      Low: 2688.0 ms
+ Latency=693746.5ms, SLA=0.0%
+  Run 2/2... Latency=692051.2ms, SLA=0.0%
+
+? Simulation completed in 6.54 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 692898.8 ± 1198.8 ms
+Average SLA: 0.0 ± 0.0 %
+=============================================================
+matlab.internal.language.introspective.errorDocCallback('load_datasets', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\load_datasets.m', 46)
+clear alibaba google_borg alibaba_dataset borg_dataset
+clear functions
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (17%): mean 17.7 ms
+    Medium priority (50%): mean 83.7 ms
+    Low priority (32%): mean 221.2 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 17.8 ms
+    Medium priority (54%): mean 83.9 ms
+    Low priority (28%): mean 239.2 ms
+? Alibaba: 500 tasks, 50 nodes
+
+Running simulation...
+  Run 1/2...{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of matrices being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('IGWA', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m', 51)" style="font-weight:bold">IGWA</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\IGWA.m',51,0)">line 51</a>)
+            new_order = [high_priority; setdiff(order, high_priority)];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 114)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',114,0)">line 114</a>)
+    [workflow_schedule, W_t, ~] = IGWA(data, allocation_plan, D_t, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 17.2 ms
+    Medium priority (53%): mean 84.0 ms
+    Low priority (29%): mean 211.3 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 17.0 ms
+    Medium priority (51%): mean 86.5 ms
+    Low priority (29%): mean 237.5 ms
+? Alibaba: 500 tasks, 50 nodes
+
+Running simulation...
+  Run 1/2...  [DEBUG] SLA Debug:
+    Total tasks: 500
+    Met deadlines: 2
+    SLA: 0.4%
+    Avg latency: 30559.3 ms
+    Priority distribution:
+      High (1): 90 tasks (deadline: 50ms)
+      Medium (2): 267 tasks (deadline: 200ms)
+      Low (3): 143 tasks (deadline: 500ms)
+    Avg durations:
+      High: 17.2 ms
+      Medium: 84.0 ms
+      Low: 211.3 ms
+ Latency=30559.3ms, SLA=0.4%
+  Run 2/2... Latency=32513.9ms, SLA=0.2%
+
+? Simulation completed in 6.65 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 31536.6 ± 1382.1 ms
+Average SLA: 0.3 ± 0.1 %
+=============================================================
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (17%): mean 17.9 ms
+    Medium priority (50%): mean 83.2 ms
+    Low priority (33%): mean 225.7 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 18.1 ms
+    Medium priority (50%): mean 85.6 ms
+    Low priority (30%): mean 221.8 ms
+? Alibaba: 500 tasks, 50 nodes
+
+Running simulation...
+  Run 1/2...  [DEBUG] SLA Debug:
+    Total tasks: 500
+    Met deadlines: 3
+    SLA: 0.6%
+    Avg latency: 24581.2 ms
+    Max latency: 49458.7 ms
+    Min latency: 100.4 ms
+    Node utilization:
+      Node 5: 500 tasks, last completion: 59448.9 ms
+ Latency=24581.2ms, SLA=0.6%
+  Run 2/2... Latency=24389.6ms, SLA=0.4%
+
+? Simulation completed in 6.51 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 24485.4 ± 135.5 ms
+Average SLA: 0.5 ± 0.1 %
+=============================================================
+Main_fast
+=============================================================
+LLM-Orch: FAST TEST MODE (Reduced tasks & runs)
+=============================================================
+
+FAST MODE: Nodes=50, Tasks=500, Runs=2
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (19%): mean 16.8 ms
+    Medium priority (50%): mean 84.4 ms
+    Low priority (31%): mean 221.7 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 17.8 ms
+    Medium priority (54%): mean 87.1 ms
+    Low priority (28%): mean 229.9 ms
+? Alibaba: 500 tasks, 50 nodes
+
+Running simulation...
+  Run 1/2... Latency=123.4ms, SLA=97.0%
+  Run 2/2... Latency=125.1ms, SLA=95.8%
+
+? Simulation completed in 4.06 seconds
+
+=============================================================
+FAST TEST RESULTS
+=============================================================
+Average Latency: 124.2 ± 1.2 ms
+Average SLA: 96.4 ± 0.8 %
+=============================================================
+Main_fast

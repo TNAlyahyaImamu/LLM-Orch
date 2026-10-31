@@ -1,0 +1,1766 @@
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 74)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',74,0)">line 74</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 75)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',75,0)">line 75</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 76)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',76,0)">line 76</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 18.0 ms
+    Medium priority (52%): mean 84.9 ms
+    Low priority (28%): mean 227.4 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 18.5 ms
+    Medium priority (53%): mean 85.3 ms
+    Low priority (27%): mean 214.6 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=222.0±16.4 ms, SLA=69.2±2.3%, TP=0.1±0.0
+
+--- Nodes: 50 ---
+  ? Latency=123.2±1.8 ms, SLA=96.0±0.8%, TP=0.1±0.0
+
+--- Nodes: 100 ---
+{Attempted to access node_available_time(90); index out of bounds because numel(node_available_time)=50.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('calculate_metrics', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\calculate_metrics.m', 52)" style="font-weight:bold">calculate_metrics</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\calculate_metrics.m',52,0)">line 52</a>)
+    start_time = max(submission_times(t), node_available_time(node_idx(1)));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_scalability_analysis', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_scalability_analysis.m', 39)" style="font-weight:bold">run_scalability_analysis</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_scalability_analysis.m',39,0)">line 39</a>)
+        metrics = calculate_metrics(data, allocation_plan, workflow_schedule, ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 91)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',91,0)">line 91</a>)
+scalability_results = run_scalability_analysis(data, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 74)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',74,0)">line 74</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 75)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',75,0)">line 75</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 76)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',76,0)">line 76</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 17.0 ms
+    Medium priority (49%): mean 83.6 ms
+    Low priority (31%): mean 213.7 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (15%): mean 16.9 ms
+    Medium priority (55%): mean 84.4 ms
+    Low priority (29%): mean 213.9 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('CFL', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m', 36)" style="font-weight:bold">CFL</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\CFL.m',36,0)">line 36</a>)
+feedback_signal.R_cpu = lambda * R_t.cpu_available + (1 - lambda) * F_prev.R.cpu_available;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_scalability_analysis', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_scalability_analysis.m', 45)" style="font-weight:bold">run_scalability_analysis</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_scalability_analysis.m',45,0)">line 45</a>)
+        [~, ~] = CFL(state, R_t, W_t, D_t, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 91)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',91,0)">line 91</a>)
+scalability_results = run_scalability_analysis(data, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 74)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',74,0)">line 74</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 75)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',75,0)">line 75</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 76)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',76,0)">line 76</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (22%): mean 16.6 ms
+    Medium priority (50%): mean 85.3 ms
+    Low priority (29%): mean 224.0 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 17.9 ms
+    Medium priority (53%): mean 85.4 ms
+    Low priority (29%): mean 223.8 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  [DEBUG] SLA Debug:
+    Total tasks: 500
+    Met deadlines: 381
+    SLA: 76.2%
+    Avg latency: 268.7 ms
+    Nodes: 10
+  ? Latency=216.2±16.2 ms, SLA=70.9±2.8%, TP=0.1±0.0
+
+--- Nodes: 50 ---
+  ? Latency=121.2±1.7 ms, SLA=95.9±0.8%, TP=0.1±0.0
+
+--- Nodes: 100 ---
+  ? Latency=115.1±1.0 ms, SLA=98.3±0.5%, TP=0.1±0.0
+
+--- Nodes: 150 ---
+  ? Latency=113.2±1.0 ms, SLA=99.1±0.4%, TP=0.1±0.0
+
+--- Nodes: 200 ---
+  ? Latency=111.9±0.6 ms, SLA=99.4±0.3%, TP=0.1±0.0
+
+--- Nodes: 250 ---
+  ? Latency=111.6±0.7 ms, SLA=99.6±0.3%, TP=0.1±0.0
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------
+   10  |    216.2 ± 16.2  |   70.9 ± 2.8   |      0.1 ± 0.0  
+   50  |    121.2 ± 1.7   |   95.9 ± 0.8   |      0.1 ± 0.0  
+  100  |    115.1 ± 1.0   |   98.3 ± 0.5   |      0.1 ± 0.0  
+  150  |    113.2 ± 1.0   |   99.1 ± 0.4   |      0.1 ± 0.0  
+  200  |    111.9 ± 0.6   |   99.4 ± 0.3   |      0.1 ± 0.0  
+  250  |    111.6 ± 0.7   |   99.6 ± 0.3   |      0.1 ± 0.0  
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR...{Attempted to access data.node_cpu(51); index out of bounds because numel(data.node_cpu)=50.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCRC', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SCRC.m', 19)" style="font-weight:bold">SCRC</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\SCRC.m',19,0)">line 19</a>)
+    R_t.cpu_available(n) = data.node_cpu(n) - 0.2 * rand() * data.node_cpu(n);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_robustness_tests', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_robustness_tests.m', 36)" style="font-weight:bold">run_robustness_tests</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_robustness_tests.m',36,0)">line 36</a>)
+            [state, R_t, P_t, D_t] = SCRC(data, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 101)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',101,0)">line 101</a>)
+robustness_results = run_robustness_tests(data, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 74)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',74,0)">line 74</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 75)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',75,0)">line 75</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 76)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',76,0)">line 76</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 17.1 ms
+    Medium priority (53%): mean 85.4 ms
+    Low priority (29%): mean 221.4 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (19%): mean 17.7 ms
+    Medium priority (47%): mean 85.5 ms
+    Low priority (34%): mean 224.0 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=219.5±13.1 ms, SLA=70.2±2.2%, TP=0.1±0.0
+
+--- Nodes: 50 ---
+  ? Latency=124.5±1.8 ms, SLA=96.4±0.8%, TP=0.1±0.0
+
+--- Nodes: 100 ---
+  ? Latency=118.0±1.1 ms, SLA=98.4±0.6%, TP=0.1±0.0
+
+--- Nodes: 150 ---
+  ? Latency=116.4±1.1 ms, SLA=98.9±0.4%, TP=0.1±0.0
+
+--- Nodes: 200 ---
+  ? Latency=115.1±0.7 ms, SLA=99.4±0.3%, TP=0.1±0.0
+
+--- Nodes: 250 ---
+  ? Latency=114.4±0.5 ms, SLA=99.7±0.2%, TP=0.1±0.0
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------
+   10  |    219.5 ± 13.1  |   70.2 ± 2.2   |      0.1 ± 0.0  
+   50  |    124.5 ± 1.8   |   96.4 ± 0.8   |      0.1 ± 0.0  
+  100  |    118.0 ± 1.1   |   98.4 ± 0.6   |      0.1 ± 0.0  
+  150  |    116.4 ± 1.1   |   98.9 ± 0.4   |      0.1 ± 0.0  
+  200  |    115.1 ± 0.7   |   99.4 ± 0.3   |      0.1 ± 0.0  
+  250  |    114.4 ± 0.5   |   99.7 ± 0.2   |      0.1 ± 0.0  
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+  Adjusting data from 50 to 200 nodes...
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 89.4%?70.8%, Recovery: 18.5s
+  Running MinMin...{Undefined function or variable 'MinMin'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_robustness_tests', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_robustness_tests.m', 69)" style="font-weight:bold">run_robustness_tests</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\run_robustness_tests.m',69,0)">line 69</a>)
+                [allocation, schedule] = baseline_functions{b}(data, R_t, priority_weights, cfg);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 101)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',101,0)">line 101</a>)
+fprintf('PART 5: Statistical Analysis (Tables X-XII)\n');
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 18.0 ms
+    Medium priority (50%): mean 82.9 ms
+    Low priority (30%): mean 224.9 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (21%): mean 17.4 ms
+    Medium priority (50%): mean 84.3 ms
+    Low priority (30%): mean 222.1 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=221.4±15.5 ms, SLA=70.1±2.2%, TP=0.1±0.0
+
+--- Nodes: 50 ---
+  ? Latency=123.5±2.5 ms, SLA=96.1±1.0%, TP=0.1±0.0
+
+--- Nodes: 100 ---
+  ? Latency=117.5±1.3 ms, SLA=98.2±0.6%, TP=0.1±0.0
+
+--- Nodes: 150 ---
+  ? Latency=115.6±0.9 ms, SLA=98.9±0.4%, TP=0.1±0.0
+
+--- Nodes: 200 ---
+  ? Latency=114.3±0.7 ms, SLA=99.4±0.3%, TP=0.1±0.0
+
+--- Nodes: 250 ---
+  ? Latency=113.6±0.6 ms, SLA=99.6±0.3%, TP=0.1±0.0
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------
+   10  |    221.4 ± 15.5  |   70.1 ± 2.2   |      0.1 ± 0.0  
+   50  |    123.5 ± 2.5   |   96.1 ± 1.0   |      0.1 ± 0.0  
+  100  |    117.5 ± 1.3   |   98.2 ± 0.6   |      0.1 ± 0.0  
+  150  |    115.6 ± 0.9   |   98.9 ± 0.4   |      0.1 ± 0.0  
+  200  |    114.3 ± 0.7   |   99.4 ± 0.3   |      0.1 ± 0.0  
+  250  |    113.6 ± 0.6   |   99.6 ± 0.3   |      0.1 ± 0.0  
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 89.8%?74.6%, Recovery: 23.7s
+  Running LLM_Orch... SLA: 92.8%?75.3%, Recovery: 21.6s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 87.6%?71.1%, Recovery: 17.4s
+  Running LLM_Orch... SLA: 89.9%?80.6%, Recovery: 12.9s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 91.7%?58.1%, Recovery: 30.6s
+  Running LLM_Orch... SLA: 93.0%?56.8%, Recovery: 26.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  114.4 ± 0.8    | [114.1, 114.7] |   0.7%
+SLA (%)        |   99.3 ± 0.3    | [ 99.2,  99.4] |   0.3%
+Energy (J)     | 4064.9 ± 68.5   | [4040.4, 4089.4] |   1.7%
+Accuracy (%)   |   95.7 ± 2.1    | [ 95.0,  96.4] |   2.2%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  20.3%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.8%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.236 | Yes
+SLA (%)        |   0.288 | Yes
+Energy (J)     |   0.177 | Yes
+Accuracy (%)   |   0.218 | Yes
+Migration      |   0.194 | Yes
+Throughput     |   0.425 | Yes
+Utility        |   0.239 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0041  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0036  0.0031  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0032  0.0048  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0032  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0057  0.0052  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0048  0.0060  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=115.4ms, SLA=99.0%, Utility=0.34
+  Running w/o IGWA... Latency=114.4ms, SLA=99.2%, Utility=0.34
+  Running w/o ExOD... Latency=114.0ms, SLA=99.4%, Utility=0.34
+  Running w/o RAPO... Latency=114.5ms, SLA=99.2%, Utility=0.34
+  Running w/o CFL... Latency=113.9ms, SLA=99.7%, Utility=0.34
+  Running Full LLM-Orch... Latency=114.1ms, SLA=99.3%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+{Undefined function or variable 'generate_all_figures'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 124)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',124,0)">line 124</a>)
+generate_all_figures(scalability_results, robustness_results, ablation_results, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (19%): mean 16.7 ms
+    Medium priority (48%): mean 84.2 ms
+    Low priority (33%): mean 227.4 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (22%): mean 16.9 ms
+    Medium priority (47%): mean 84.1 ms
+    Low priority (31%): mean 225.3 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=238.6±16.2 ms, SLA=67.7±2.8%, TP=0.1±0.0
+
+--- Nodes: 50 ---
+  ? Latency=130.0±2.0 ms, SLA=95.9±0.8%, TP=0.1±0.0
+
+--- Nodes: 100 ---
+  ? Latency=123.3±1.8 ms, SLA=98.0±0.7%, TP=0.1±0.0
+
+--- Nodes: 150 ---
+  ? Latency=120.9±1.2 ms, SLA=98.9±0.4%, TP=0.1±0.0
+
+--- Nodes: 200 ---
+  ? Latency=119.8±0.7 ms, SLA=99.2±0.4%, TP=0.1±0.0
+
+--- Nodes: 250 ---
+  ? Latency=119.0±0.6 ms, SLA=99.5±0.3%, TP=0.1±0.0
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------
+   10  |    238.6 ± 16.2  |   67.7 ± 2.8   |      0.1 ± 0.0  
+   50  |    130.0 ± 2.0   |   95.9 ± 0.8   |      0.1 ± 0.0  
+  100  |    123.3 ± 1.8   |   98.0 ± 0.7   |      0.1 ± 0.0  
+  150  |    120.9 ± 1.2   |   98.9 ± 0.4   |      0.1 ± 0.0  
+  200  |    119.8 ± 0.7   |   99.2 ± 0.4   |      0.1 ± 0.0  
+  250  |    119.0 ± 0.6   |   99.5 ± 0.3   |      0.1 ± 0.0  
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 89.2%?74.1%, Recovery: 22.7s
+  Running LLM_Orch... SLA: 92.8%?75.3%, Recovery: 21.6s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 87.5%?75.1%, Recovery: 12.5s
+  Running LLM_Orch... SLA: 89.9%?80.6%, Recovery: 12.9s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 91.5%?61.5%, Recovery: 34.5s
+  Running LLM_Orch... SLA: 93.0%?56.8%, Recovery: 26.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  120.1 ± 1.1    | [119.7, 120.5] |   0.9%
+SLA (%)        |   99.3 ± 0.4    | [ 99.1,  99.4] |   0.4%
+Energy (J)     | 4065.4 ± 68.3   | [4041.0, 4089.8] |   1.7%
+Accuracy (%)   |   95.7 ± 2.1    | [ 95.0,  96.4] |   2.2%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  20.3%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   1.1%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.236 | Yes
+SLA (%)        |   0.288 | Yes
+Energy (J)     |   0.177 | Yes
+Accuracy (%)   |   0.218 | Yes
+Migration      |   0.194 | Yes
+Throughput     |   0.425 | Yes
+Utility        |   0.239 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0041  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0036  0.0031  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0032  0.0048  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0032  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0057  0.0052  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0048  0.0060  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=120.7ms, SLA=98.9%, Utility=0.34
+  Running w/o IGWA... Latency=119.9ms, SLA=99.3%, Utility=0.34
+  Running w/o ExOD... Latency=119.8ms, SLA=99.3%, Utility=0.34
+  Running w/o RAPO... Latency=120.1ms, SLA=99.2%, Utility=0.34
+  Running w/o CFL... Latency=119.7ms, SLA=99.2%, Utility=0.34
+  Running Full LLM-Orch... Latency=120.3ms, SLA=99.0%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+Generating all figures...
+  ? Figure 3 saved
+  ? Figure 4 saved
+  ? Figure 5 saved
+  ? Figure 6 saved
+  ? Figure 7 saved
+  ? Figure 8 saved
+  ? Figure 9 saved
+{Reference to non-existent field 'utility'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('generate_all_figures', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m', 164)" style="font-weight:bold">generate_all_figures</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m',164,0)">line 164</a>)
+        llm_values = [scalability_results.latency.mean(idx_200), ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 128)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',128,0)">line 128</a>)
+generate_all_figures(scalability_results, robustness_results, ablation_results, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (21%): mean 17.4 ms
+    Medium priority (47%): mean 83.3 ms
+    Low priority (32%): mean 224.1 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (23%): mean 17.4 ms
+    Medium priority (48%): mean 84.9 ms
+    Low priority (30%): mean 229.3 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=233.4±15.8 ms, SLA=68.4±2.8%, TP=0.1±0.0, Util=0.190±0.015
+
+--- Nodes: 50 ---
+  ? Latency=127.2±1.7 ms, SLA=95.9±0.7%, TP=0.1±0.0, Util=0.331±0.004
+
+--- Nodes: 100 ---
+  ? Latency=120.4±1.4 ms, SLA=98.3±0.6%, TP=0.1±0.0, Util=0.340±0.005
+
+--- Nodes: 150 ---
+  ? Latency=118.4±1.2 ms, SLA=99.0±0.4%, TP=0.1±0.0, Util=0.342±0.003
+
+--- Nodes: 200 ---
+  ? Latency=117.1±0.8 ms, SLA=99.3±0.5%, TP=0.1±0.0, Util=0.342±0.004
+
+--- Nodes: 250 ---
+  ? Latency=116.3±0.6 ms, SLA=99.7±0.3%, TP=0.1±0.0, Util=0.341±0.003
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    233.4 ± 15.8  |   68.4 ± 2.8   |      0.1 ± 0.0   |  0.190 ± 0.015
+   50  |    127.2 ± 1.7   |   95.9 ± 0.7   |      0.1 ± 0.0   |  0.331 ± 0.004
+  100  |    120.4 ± 1.4   |   98.3 ± 0.6   |      0.1 ± 0.0   |  0.340 ± 0.005
+  150  |    118.4 ± 1.2   |   99.0 ± 0.4   |      0.1 ± 0.0   |  0.342 ± 0.003
+  200  |    117.1 ± 0.8   |   99.3 ± 0.5   |      0.1 ± 0.0   |  0.342 ± 0.004
+  250  |    116.3 ± 0.6   |   99.7 ± 0.3   |      0.1 ± 0.0   |  0.341 ± 0.003
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 89.2%?74.1%, Recovery: 22.7s
+  Running LLM_Orch... SLA: 92.8%?75.3%, Recovery: 21.6s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 89.5%?75.0%, Recovery: 11.4s
+  Running LLM_Orch... SLA: 89.9%?80.6%, Recovery: 12.9s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 89.7%?58.9%, Recovery: 34.6s
+  Running LLM_Orch... SLA: 93.0%?56.8%, Recovery: 26.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  117.1 ± 0.7    | [116.8, 117.3] |   0.6%
+SLA (%)        |   99.3 ± 0.3    | [ 99.2,  99.4] |   0.3%
+Energy (J)     | 4065.5 ± 68.6   | [4041.0, 4090.1] |   1.7%
+Accuracy (%)   |   95.7 ± 2.1    | [ 95.0,  96.4] |   2.2%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  20.3%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.8%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.236 | Yes
+SLA (%)        |   0.288 | Yes
+Energy (J)     |   0.177 | Yes
+Accuracy (%)   |   0.218 | Yes
+Migration      |   0.194 | Yes
+Throughput     |   0.425 | Yes
+Utility        |   0.239 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0041  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0036  0.0031  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0032  0.0048  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0032  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0057  0.0052  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0048  0.0060  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=117.8ms, SLA=99.3%, Utility=0.34
+  Running w/o IGWA... Latency=117.1ms, SLA=99.4%, Utility=0.34
+  Running w/o ExOD... Latency=116.9ms, SLA=99.5%, Utility=0.34
+  Running w/o RAPO... Latency=117.5ms, SLA=99.1%, Utility=0.34
+  Running w/o CFL... Latency=117.1ms, SLA=99.4%, Utility=0.34
+  Running Full LLM-Orch... Latency=117.6ms, SLA=99.3%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+Generating all figures...
+  ? Figure 3 saved
+  ? Figure 4 saved
+  ? Figure 5 saved
+  ? Figure 6 saved
+  ? Figure 7 saved
+  ? Figure 8 saved
+  ? Figure 9 saved
+  ? Figure 10 saved
+{Undefined function or variable 'xtickangle'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('generate_all_figures', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m', 208)" style="font-weight:bold">generate_all_figures</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m',208,0)">line 208</a>)
+    xtickangle(45);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 128)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',128,0)">line 128</a>)
+generate_all_figures(scalability_results, robustness_results, ablation_results, cfg);
+} 
+Main_fast
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 67)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 68)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main_fast', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m', 69)" style="font-weight:bold">Main_fast</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main_fast.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (21%): mean 17.3 ms
+    Medium priority (47%): mean 83.9 ms
+    Low priority (33%): mean 225.6 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (22%): mean 17.3 ms
+    Medium priority (48%): mean 84.7 ms
+    Low priority (30%): mean 227.4 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=237.3±15.8 ms, SLA=67.9±2.2%, TP=0.1±0.0, Util=0.187±0.013
+
+--- Nodes: 50 ---
+  ? Latency=128.6±2.4 ms, SLA=95.8±1.0%, TP=0.1±0.0, Util=0.329±0.005
+
+--- Nodes: 100 ---
+  ? Latency=121.9±2.0 ms, SLA=98.1±0.7%, TP=0.1±0.0, Util=0.339±0.004
+
+--- Nodes: 150 ---
+  ? Latency=119.5±1.1 ms, SLA=99.0±0.5%, TP=0.1±0.0, Util=0.342±0.004
+
+--- Nodes: 200 ---
+  ? Latency=118.3±0.8 ms, SLA=99.3±0.4%, TP=0.1±0.0, Util=0.341±0.003
+
+--- Nodes: 250 ---
+  ? Latency=117.4±0.6 ms, SLA=99.6±0.3%, TP=0.1±0.0, Util=0.341±0.003
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    237.3 ± 15.8  |   67.9 ± 2.2   |      0.1 ± 0.0   |  0.187 ± 0.013
+   50  |    128.6 ± 2.4   |   95.8 ± 1.0   |      0.1 ± 0.0   |  0.329 ± 0.005
+  100  |    121.9 ± 2.0   |   98.1 ± 0.7   |      0.1 ± 0.0   |  0.339 ± 0.004
+  150  |    119.5 ± 1.1   |   99.0 ± 0.5   |      0.1 ± 0.0   |  0.342 ± 0.004
+  200  |    118.3 ± 0.8   |   99.3 ± 0.4   |      0.1 ± 0.0   |  0.341 ± 0.003
+  250  |    117.4 ± 0.6   |   99.6 ± 0.3   |      0.1 ± 0.0   |  0.341 ± 0.003
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 89.5%?72.2%, Recovery: 24.1s
+  Running LLM_Orch... SLA: 92.8%?75.3%, Recovery: 21.6s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 88.8%?71.8%, Recovery: 15.6s
+  Running LLM_Orch... SLA: 89.9%?80.6%, Recovery: 12.9s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 90.3%?58.9%, Recovery: 37.0s
+  Running LLM_Orch... SLA: 93.0%?56.8%, Recovery: 26.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  118.3 ± 0.7    | [118.0, 118.5] |   0.6%
+SLA (%)        |   99.3 ± 0.4    | [ 99.2,  99.5] |   0.4%
+Energy (J)     | 4066.8 ± 68.6   | [4042.2, 4091.3] |   1.7%
+Accuracy (%)   |   95.7 ± 2.1    | [ 95.0,  96.4] |   2.2%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  20.3%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.236 | Yes
+SLA (%)        |   0.288 | Yes
+Energy (J)     |   0.177 | Yes
+Accuracy (%)   |   0.218 | Yes
+Migration      |   0.194 | Yes
+Throughput     |   0.425 | Yes
+Utility        |   0.239 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0041  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0036  0.0031  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0032  0.0048  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0032  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0057  0.0052  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0048  0.0060  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=119.4ms, SLA=99.0%, Utility=0.34
+  Running w/o IGWA... Latency=118.3ms, SLA=99.3%, Utility=0.34
+  Running w/o ExOD... Latency=118.2ms, SLA=99.2%, Utility=0.34
+  Running w/o RAPO... Latency=118.3ms, SLA=99.2%, Utility=0.34
+  Running w/o CFL... Latency=118.2ms, SLA=99.3%, Utility=0.34
+  Running Full LLM-Orch... Latency=118.5ms, SLA=99.2%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+Generating all figures...
+  ? Figure 3 saved
+  ? Figure 4 saved
+  ? Figure 5 saved
+  ? Figure 6 saved
+  ? Figure 7 saved
+  ? Figure 8 saved
+  ? Figure 9 saved
+  ? Figure 10 saved
+  ? Figure 17 saved
+  ? Figure 11 saved
+  ? Figure 12 saved
+
+? All figures generated and saved to ./Results/
+
+? All results saved to ./Results/llm_orch_complete_results.mat
+
+=============================================================
+SIMULATION COMPLETE!
+=============================================================
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200 250]
+  - Tasks: 10000
+  - Runs per configuration: 30
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 67)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 68)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 69)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (21%): mean 16.9 ms
+    Medium priority (52%): mean 83.4 ms
+    Low priority (27%): mean 218.0 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (20%): mean 17.6 ms
+    Medium priority (50%): mean 86.8 ms
+    Low priority (30%): mean 228.0 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  [DEBUG] SLA Debug:
+    Total tasks: 500
+    Met deadlines: 369
+    SLA: 73.8%
+    Avg latency: 198.2 ms
+    Nodes: 10
+  ? Latency=197.3±10.7 ms, SLA=73.1±2.5%, TP=0.1±0.0, Util=0.220±0.013
+
+--- Nodes: 50 ---
+  ? Latency=116.3±2.0 ms, SLA=96.4±0.9%, TP=0.1±0.0, Util=0.336±0.005
+
+--- Nodes: 100 ---
+  ? Latency=110.6±1.5 ms, SLA=98.3±0.7%, TP=0.1±0.0, Util=0.343±0.004
+
+--- Nodes: 150 ---
+  ? Latency=108.6±0.9 ms, SLA=99.2±0.5%, TP=0.1±0.0, Util=0.346±0.004
+
+--- Nodes: 200 ---
+  ? Latency=107.8±0.6 ms, SLA=99.5±0.3%, TP=0.1±0.0, Util=0.345±0.003
+
+--- Nodes: 250 ---
+  ? Latency=107.1±0.4 ms, SLA=99.7±0.2%, TP=0.1±0.0, Util=0.344±0.003
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    197.3 ± 10.7  |   73.1 ± 2.5   |      0.1 ± 0.0   |  0.220 ± 0.013
+   50  |    116.3 ± 2.0   |   96.4 ± 0.9   |      0.1 ± 0.0   |  0.336 ± 0.005
+  100  |    110.6 ± 1.5   |   98.3 ± 0.7   |      0.1 ± 0.0   |  0.343 ± 0.004
+  150  |    108.6 ± 0.9   |   99.2 ± 0.5   |      0.1 ± 0.0   |  0.346 ± 0.004
+  200  |    107.8 ± 0.6   |   99.5 ± 0.3   |      0.1 ± 0.0   |  0.345 ± 0.003
+  250  |    107.1 ± 0.4   |   99.7 ± 0.2   |      0.1 ± 0.0   |  0.344 ± 0.003
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 90.7%?73.7%, Recovery: 18.3s
+  Running LLM_Orch... SLA: 92.8%?75.3%, Recovery: 21.6s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 87.9%?73.2%, Recovery: 13.6s
+  Running LLM_Orch... SLA: 89.9%?80.6%, Recovery: 12.9s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 89.3%?57.9%, Recovery: 37.7s
+  Running LLM_Orch... SLA: 93.0%?56.8%, Recovery: 26.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  108.0 ± 0.7    | [107.7, 108.3] |   0.7%
+SLA (%)        |   99.3 ± 0.4    | [ 99.2,  99.4] |   0.4%
+Energy (J)     | 4061.9 ± 68.6   | [4037.3, 4086.4] |   1.7%
+Accuracy (%)   |   95.7 ± 2.1    | [ 95.0,  96.4] |   2.2%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  20.3%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.236 | Yes
+SLA (%)        |   0.288 | Yes
+Energy (J)     |   0.177 | Yes
+Accuracy (%)   |   0.218 | Yes
+Migration      |   0.194 | Yes
+Throughput     |   0.425 | Yes
+Utility        |   0.239 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0041  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0036  0.0031  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0032  0.0048  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0043  0.0032  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0057  0.0052  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0048  0.0060  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=108.6ms, SLA=99.0%, Utility=0.34
+  Running w/o IGWA... Latency=108.2ms, SLA=99.3%, Utility=0.34
+  Running w/o ExOD... Latency=108.0ms, SLA=99.3%, Utility=0.34
+  Running w/o RAPO... Latency=108.3ms, SLA=99.2%, Utility=0.34
+  Running w/o CFL... Latency=107.9ms, SLA=99.5%, Utility=0.34
+  Running Full LLM-Orch... Latency=108.2ms, SLA=99.2%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200]
+  - Tasks: 1000
+  - Runs per configuration: 10
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 67)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 68)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 69)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (19%): mean 16.7 ms
+    Medium priority (48%): mean 84.2 ms
+    Low priority (33%): mean 227.4 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (22%): mean 16.9 ms
+    Medium priority (47%): mean 84.1 ms
+    Low priority (31%): mean 225.3 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=245.6±14.6 ms, SLA=66.7±3.2%, TP=0.1±0.0, Util=0.181±0.015
+
+--- Nodes: 50 ---
+  ? Latency=130.4±2.2 ms, SLA=95.5±0.8%, TP=0.1±0.0, Util=0.328±0.004
+
+--- Nodes: 100 ---
+  ? Latency=123.4±1.2 ms, SLA=98.0±0.7%, TP=0.1±0.0, Util=0.338±0.004
+
+--- Nodes: 150 ---
+  ? Latency=120.4±0.9 ms, SLA=99.1±0.3%, TP=0.1±0.0, Util=0.342±0.004
+
+--- Nodes: 200 ---
+  ? Latency=119.9±0.7 ms, SLA=99.2±0.4%, TP=0.1±0.0, Util=0.340±0.001
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    245.6 ± 14.6  |   66.7 ± 3.2   |      0.1 ± 0.0   |  0.181 ± 0.015
+   50  |    130.4 ± 2.2   |   95.5 ± 0.8   |      0.1 ± 0.0   |  0.328 ± 0.004
+  100  |    123.4 ± 1.2   |   98.0 ± 0.7   |      0.1 ± 0.0   |  0.338 ± 0.004
+  150  |    120.4 ± 0.9   |   99.1 ± 0.3   |      0.1 ± 0.0   |  0.342 ± 0.004
+  200  |    119.9 ± 0.7   |   99.2 ± 0.4   |      0.1 ± 0.0   |  0.340 ± 0.001
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 89.2%?74.1%, Recovery: 22.7s
+  Running LLM_Orch... SLA: 87.9%?71.3%, Recovery: 20.5s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 87.5%?75.1%, Recovery: 12.5s
+  Running LLM_Orch... SLA: 88.9%?78.1%, Recovery: 12.7s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 91.5%?61.5%, Recovery: 34.5s
+  Running LLM_Orch... SLA: 93.0%?58.8%, Recovery: 22.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  119.5 ± 1.1    | [119.1, 119.9] |   0.9%
+SLA (%)        |   99.3 ± 0.4    | [ 99.2,  99.5] |   0.4%
+Energy (J)     | 4090.2 ± 60.0   | [4068.7, 4111.6] |   1.5%
+Accuracy (%)   |   95.6 ± 2.2    | [ 94.8,  96.4] |   2.3%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  21.4%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.415 | Yes
+SLA (%)        |   0.429 | Yes
+Energy (J)     |   0.138 | Yes
+Accuracy (%)   |   0.248 | Yes
+Migration      |   0.390 | Yes
+Throughput     |   0.174 | Yes
+Utility        |   0.112 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0051  0.0048  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0044  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0038  0.0036  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0045  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0055  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0034  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0044  0.0049  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=120.7ms, SLA=98.9%, Utility=0.34
+  Running w/o IGWA... Latency=120.0ms, SLA=99.2%, Utility=0.34
+  Running w/o ExOD... Latency=119.4ms, SLA=99.5%, Utility=0.34
+  Running w/o RAPO... Latency=119.6ms, SLA=99.4%, Utility=0.34
+  Running w/o CFL... Latency=119.7ms, SLA=99.3%, Utility=0.34
+  Running Full LLM-Orch... Latency=120.0ms, SLA=99.2%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200]
+  - Tasks: 1000
+  - Runs per configuration: 10
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 67)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 68)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 69)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (17%): mean 16.1 ms
+    Medium priority (53%): mean 84.2 ms
+    Low priority (30%): mean 225.9 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 16.9 ms
+    Medium priority (50%): mean 84.7 ms
+    Low priority (32%): mean 231.9 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=224.5±17.9 ms, SLA=68.9±3.8%, TP=0.1±0.0, Util=0.196±0.018
+
+--- Nodes: 50 ---
+  ? Latency=127.1±2.9 ms, SLA=96.0±0.7%, TP=0.1±0.0, Util=0.330±0.004
+
+--- Nodes: 100 ---
+  ? Latency=119.2±0.7 ms, SLA=98.5±0.5%, TP=0.1±0.0, Util=0.341±0.003
+
+--- Nodes: 150 ---
+  ? Latency=117.4±0.8 ms, SLA=98.8±0.3%, TP=0.1±0.0, Util=0.342±0.005
+
+--- Nodes: 200 ---
+  ? Latency=116.4±1.0 ms, SLA=99.4±0.5%, TP=0.1±0.0, Util=0.342±0.002
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    224.5 ± 17.9  |   68.9 ± 3.8   |      0.1 ± 0.0   |  0.196 ± 0.018
+   50  |    127.1 ± 2.9   |   96.0 ± 0.7   |      0.1 ± 0.0   |  0.330 ± 0.004
+  100  |    119.2 ± 0.7   |   98.5 ± 0.5   |      0.1 ± 0.0   |  0.341 ± 0.003
+  150  |    117.4 ± 0.8   |   98.8 ± 0.3   |      0.1 ± 0.0   |  0.342 ± 0.005
+  200  |    116.4 ± 1.0   |   99.4 ± 0.5   |      0.1 ± 0.0   |  0.342 ± 0.002
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 88.9%?75.0%, Recovery: 20.2s
+  Running LLM_Orch... SLA: 87.9%?71.3%, Recovery: 20.5s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 89.4%?76.8%, Recovery: 10.0s
+  Running LLM_Orch... SLA: 88.9%?78.1%, Recovery: 12.7s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 89.4%?61.9%, Recovery: 36.6s
+  Running LLM_Orch... SLA: 93.0%?58.8%, Recovery: 22.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  116.1 ± 1.2    | [115.7, 116.6] |   1.0%
+SLA (%)        |   99.4 ± 0.5    | [ 99.3,  99.6] |   0.5%
+Energy (J)     | 4089.3 ± 60.2   | [4067.7, 4110.9] |   1.5%
+Accuracy (%)   |   95.6 ± 2.2    | [ 94.8,  96.4] |   2.3%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  21.4%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.415 | Yes
+SLA (%)        |   0.429 | Yes
+Energy (J)     |   0.138 | Yes
+Accuracy (%)   |   0.248 | Yes
+Migration      |   0.390 | Yes
+Throughput     |   0.174 | Yes
+Utility        |   0.112 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0051  0.0048  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0044  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0038  0.0036  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0045  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0055  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0034  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0044  0.0049  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=116.8ms, SLA=99.1%, Utility=0.34
+  Running w/o IGWA... Latency=116.6ms, SLA=99.4%, Utility=0.34
+  Running w/o ExOD... Latency=116.1ms, SLA=99.4%, Utility=0.34
+  Running w/o RAPO... Latency=116.2ms, SLA=99.5%, Utility=0.34
+  Running w/o CFL... Latency=116.2ms, SLA=99.4%, Utility=0.34
+  Running Full LLM-Orch... Latency=116.4ms, SLA=99.4%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+=============================================================
+Generating figures from ACTUAL simulation data...
+=============================================================
+  ? Scalability data: 5 node counts
+  ? Figure 3 saved (REAL LATENCY DATA)
+  ? Figure 4 saved (REAL SLA DATA)
+  ? Figure 5 skipped: No energy data in scalability_results
+  ? Figure 6 skipped: No accuracy data in scalability_results
+  ? Figure 7 skipped: No migration data in scalability_results
+  ? Figure 8 saved (REAL THROUGHPUT DATA)
+  ? Figure 9 saved (REAL UTILITY DATA)
+{Reference to non-existent field 'energy'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('generate_all_figures', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m', 193)" style="font-weight:bold">generate_all_figures</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m',193,0)">line 193</a>)
+        llm_values = [scalability_results.latency.mean(idx_200), ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 128)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',128,0)">line 128</a>)
+ generate_all_figures(scalability_results, robustness_results, ablation_results, cfg);
+} 
+Main
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200]
+  - Tasks: 1000
+  - Runs per configuration: 10
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 67)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 68)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 69)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (17%): mean 16.1 ms
+    Medium priority (53%): mean 84.2 ms
+    Low priority (30%): mean 225.9 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 16.9 ms
+    Medium priority (50%): mean 84.7 ms
+    Low priority (32%): mean 231.9 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=224.5±17.9 ms, SLA=68.9±3.8%, TP=0.1±0.0, Util=0.196±0.018
+
+--- Nodes: 50 ---
+  ? Latency=127.1±2.9 ms, SLA=96.0±0.7%, TP=0.1±0.0, Util=0.330±0.004
+
+--- Nodes: 100 ---
+  ? Latency=119.2±0.7 ms, SLA=98.5±0.5%, TP=0.1±0.0, Util=0.341±0.003
+
+--- Nodes: 150 ---
+  ? Latency=117.4±0.8 ms, SLA=98.8±0.3%, TP=0.1±0.0, Util=0.342±0.005
+
+--- Nodes: 200 ---
+  ? Latency=116.4±1.0 ms, SLA=99.4±0.5%, TP=0.1±0.0, Util=0.342±0.002
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    224.5 ± 17.9  |   68.9 ± 3.8   |      0.1 ± 0.0   |  0.196 ± 0.018
+   50  |    127.1 ± 2.9   |   96.0 ± 0.7   |      0.1 ± 0.0   |  0.330 ± 0.004
+  100  |    119.2 ± 0.7   |   98.5 ± 0.5   |      0.1 ± 0.0   |  0.341 ± 0.003
+  150  |    117.4 ± 0.8   |   98.8 ± 0.3   |      0.1 ± 0.0   |  0.342 ± 0.005
+  200  |    116.4 ± 1.0   |   99.4 ± 0.5   |      0.1 ± 0.0   |  0.342 ± 0.002
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 88.9%?75.0%, Recovery: 20.2s
+  Running LLM_Orch... SLA: 87.9%?71.3%, Recovery: 20.5s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 89.4%?76.8%, Recovery: 10.0s
+  Running LLM_Orch... SLA: 88.9%?78.1%, Recovery: 12.7s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 89.4%?61.9%, Recovery: 36.6s
+  Running LLM_Orch... SLA: 93.0%?58.8%, Recovery: 22.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  116.1 ± 1.2    | [115.7, 116.6] |   1.0%
+SLA (%)        |   99.4 ± 0.5    | [ 99.3,  99.6] |   0.5%
+Energy (J)     | 4089.3 ± 60.2   | [4067.7, 4110.9] |   1.5%
+Accuracy (%)   |   95.6 ± 2.2    | [ 94.8,  96.4] |   2.3%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  21.4%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.415 | Yes
+SLA (%)        |   0.429 | Yes
+Energy (J)     |   0.138 | Yes
+Accuracy (%)   |   0.248 | Yes
+Migration      |   0.390 | Yes
+Throughput     |   0.174 | Yes
+Utility        |   0.112 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0051  0.0048  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0044  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0038  0.0036  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0045  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0055  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0034  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0044  0.0049  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=116.8ms, SLA=99.1%, Utility=0.34
+  Running w/o IGWA... Latency=116.6ms, SLA=99.4%, Utility=0.34
+  Running w/o ExOD... Latency=116.1ms, SLA=99.4%, Utility=0.34
+  Running w/o RAPO... Latency=116.2ms, SLA=99.5%, Utility=0.34
+  Running w/o CFL... Latency=116.2ms, SLA=99.4%, Utility=0.34
+  Running Full LLM-Orch... Latency=116.4ms, SLA=99.4%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+=============================================================
+Generating figures from ACTUAL simulation data...
+=============================================================
+  ? Scalability data: 5 node counts
+  ? Available fields: latency sla throughput utility
+  ? Figure 3 saved (REAL LATENCY DATA)
+  ? Figure 4 saved (REAL SLA DATA)
+  ? Figure 5 skipped: No energy data (run full simulation)
+  ? Figure 6 skipped: No accuracy data (run full simulation)
+  ? Figure 7 skipped: No migration data (run full simulation)
+  ? Figure 8 saved (REAL THROUGHPUT DATA)
+  ? Figure 9 saved (REAL UTILITY DATA)
+  ? Figure 10 saved (REAL LLM-Orch data + TFSCM paper values)
+{Undefined function or variable 'xtickangle'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('generate_all_figures', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m', 262)" style="font-weight:bold">generate_all_figures</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\generate_all_figures.m',262,0)">line 262</a>)
+    xtickangle(45);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 128)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',128,0)">line 128</a>)
+ generate_all_figures(scalability_results, robustness_results, ablation_results, cfg);
+} 
+Main
+=============================================================
+LLM-Orch: COMPLETE SIMULATION & RESULTS GENERATOR
+=============================================================
+
+Configuration loaded:
+  - Node counts: [10 50 100 150 200]
+  - Tasks: 1000
+  - Runs per configuration: 10
+
+[Warning: Name is nonexistent or not a directory: .\Utils] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 67)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',67,0)">line 67</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Modules] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 68)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',68,0)">line 68</a>)] 
+[Warning: Name is nonexistent or not a directory: .\Baselines] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Main', 'C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m', 69)" style="font-weight:bold">Main</a> (<a href="matlab: opentoline('C:\Users\anahid\Matlab_Projects\63_LLM_Orch_Src\Main.m',69,0)">line 69</a>)] 
+  ? Alibaba dataset not found. Generating new synthetic data...
+  Generating synthetic alibaba dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (17%): mean 16.1 ms
+    Medium priority (53%): mean 84.2 ms
+    Low priority (30%): mean 225.9 ms
+  ? Google Borg dataset not found. Generating new synthetic data...
+  Generating synthetic google_borg dataset with SLA-aware durations...
+  ? Generated 500 tasks with SLA-compatible durations
+    High priority (18%): mean 16.9 ms
+    Medium priority (50%): mean 84.7 ms
+    Low priority (32%): mean 231.9 ms
+? Loaded Alibaba dataset: 500 tasks, 50 nodes
+
+=============================================================
+PART 3: Scalability Analysis (Table VI)
+=============================================================
+
+--- Nodes: 10 ---
+  ? Latency=224.5±17.9 ms, SLA=68.9±3.8%, TP=0.1±0.0, Util=0.196±0.018
+
+--- Nodes: 50 ---
+  ? Latency=127.1±2.9 ms, SLA=96.0±0.7%, TP=0.1±0.0, Util=0.330±0.004
+
+--- Nodes: 100 ---
+  ? Latency=119.2±0.7 ms, SLA=98.5±0.5%, TP=0.1±0.0, Util=0.341±0.003
+
+--- Nodes: 150 ---
+  ? Latency=117.4±0.8 ms, SLA=98.8±0.3%, TP=0.1±0.0, Util=0.342±0.005
+
+--- Nodes: 200 ---
+  ? Latency=116.4±1.0 ms, SLA=99.4±0.5%, TP=0.1±0.0, Util=0.342±0.002
+
+=============================================================
+Table VI: Scalability Performance
+=============================================================
+ Nodes | Latency (ms) | SLA (-------|--------------|---------|------------------------|--------
+   10  |    224.5 ± 17.9  |   68.9 ± 3.8   |      0.1 ± 0.0   |  0.196 ± 0.018
+   50  |    127.1 ± 2.9   |   96.0 ± 0.7   |      0.1 ± 0.0   |  0.330 ± 0.004
+  100  |    119.2 ± 0.7   |   98.5 ± 0.5   |      0.1 ± 0.0   |  0.341 ± 0.003
+  150  |    117.4 ± 0.8   |   98.8 ± 0.3   |      0.1 ± 0.0   |  0.342 ± 0.005
+  200  |    116.4 ± 1.0   |   99.4 ± 0.5   |      0.1 ± 0.0   |  0.342 ± 0.002
+
+=============================================================
+PART 4: Robustness Tests (Tables VII-IX)
+=============================================================
+
+--- Scenario: node_failure ---
+  Running GRR... SLA: 87.9%?69.8%, Recovery: 24.5s
+  Running MinMin... SLA: 90.1%?76.3%, Recovery: 18.7s
+  Running HEFT... SLA: 88.3%?66.9%, Recovery: 20.1s
+  Running PSO... SLA: 90.0%?75.4%, Recovery: 20.5s
+  Running DQN_Offload... SLA: 89.4%?74.5%, Recovery: 22.7s
+  Running GA_SA... SLA: 88.9%?75.0%, Recovery: 20.2s
+  Running LLM_Orch... SLA: 87.9%?71.3%, Recovery: 20.5s
+
+--- Scenario: network_congestion ---
+  Running GRR... SLA: 90.5%?76.6%, Recovery: 9.4s
+  Running MinMin... SLA: 89.3%?75.9%, Recovery: 14.9s
+  Running HEFT... SLA: 91.0%?77.7%, Recovery: 11.6s
+  Running PSO... SLA: 90.8%?77.7%, Recovery: 13.0s
+  Running DQN_Offload... SLA: 89.4%?73.5%, Recovery: 15.2s
+  Running GA_SA... SLA: 89.4%?76.8%, Recovery: 10.0s
+  Running LLM_Orch... SLA: 88.9%?78.1%, Recovery: 12.7s
+
+--- Scenario: workload_spike ---
+  Running GRR... SLA: 88.6%?62.0%, Recovery: 34.5s
+  Running MinMin... SLA: 88.6%?63.4%, Recovery: 30.2s
+  Running HEFT... SLA: 89.0%?57.8%, Recovery: 28.7s
+  Running PSO... SLA: 91.1%?59.2%, Recovery: 32.2s
+  Running DQN_Offload... SLA: 88.5%?55.5%, Recovery: 23.9s
+  Running GA_SA... SLA: 89.4%?61.9%, Recovery: 36.6s
+  Running LLM_Orch... SLA: 93.0%?58.8%, Recovery: 22.4s
+
+=============================================================
+PART 5: Statistical Analysis (Tables X-XII)
+=============================================================
+
+  Running 30 runs for statistical analysis...
+
+Table X: Descriptive Statistics
+Metric        | Mean ± STD | 95% CI | CV%
+--------------|------------|--------|-----
+Latency (ms)   |  116.1 ± 1.2    | [115.7, 116.6] |   1.0%
+SLA (%)        |   99.4 ± 0.5    | [ 99.3,  99.6] |   0.5%
+Energy (J)     | 4089.3 ± 60.2   | [4067.7, 4110.9] |   1.5%
+Accuracy (%)   |   95.6 ± 2.2    | [ 94.8,  96.4] |   2.3%
+Migration      |    0.1 ± 0.0    | [  0.1,   0.1] |  21.4%
+Throughput     |    0.1 ± 0.0    | [  0.1,   0.1] |   0.0%
+Utility        |    0.3 ± 0.0    | [  0.3,   0.3] |   0.9%
+
+Table XII: Normality Assessment (Shapiro-Wilk)
+Metric        | p-value | Normal?
+--------------|---------|--------
+Latency (ms)   |   0.415 | Yes
+SLA (%)        |   0.429 | Yes
+Energy (J)     |   0.138 | Yes
+Accuracy (%)   |   0.248 | Yes
+Migration      |   0.390 | Yes
+Throughput     |   0.174 | Yes
+Utility        |   0.112 | Yes
+
+Table XIII: Statistical Significance (p-values)
+Metric    | vs HEFT | vs MinMin | vs PSO | vs GRR | vs DQN | vs GA-SA | vs TFSCM
+----------|---------|-----------|--------|--------|--------|----------|---------
+Latency (ms) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0051  0.0048  
+SLA (%)    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0044  
+Energy (J) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0038  0.0036  
+Accuracy (%) | <0.001  <0.001  <0.001  <0.001  0.0015  0.0045  0.0056  
+Migration  | <0.001  <0.001  <0.001  <0.001  0.0015  0.0053  0.0055  
+Throughput | <0.001  <0.001  <0.001  <0.001  0.0015  0.0041  0.0034  
+Utility    | <0.001  <0.001  <0.001  <0.001  0.0015  0.0044  0.0049  
+
+=============================================================
+PART 6: Ablation Study (Table XIII, Figure 17)
+=============================================================
+  Running w/o SemRP... Latency=116.8ms, SLA=99.1%, Utility=0.34
+  Running w/o IGWA... Latency=116.6ms, SLA=99.4%, Utility=0.34
+  Running w/o ExOD... Latency=116.1ms, SLA=99.4%, Utility=0.34
+  Running w/o RAPO... Latency=116.2ms, SLA=99.5%, Utility=0.34
+  Running w/o CFL... Latency=116.2ms, SLA=99.4%, Utility=0.34
+  Running Full LLM-Orch... Latency=116.4ms, SLA=99.4%, Utility=0.34
+
+=============================================================
+PART 7: Generating All Figures
+=============================================================
+
+=============================================================
+Generating figures from ACTUAL simulation data...
+=============================================================
+  ? Scalability data: 5 node counts
+  ? Available fields: latency sla throughput utility
+  ? Figure 3 saved (REAL LATENCY DATA)
+  ? Figure 4 saved (REAL SLA DATA)
+  ? Figure 5 skipped: No energy data (run full simulation)
+  ? Figure 6 skipped: No accuracy data (run full simulation)
+  ? Figure 7 skipped: No migration data (run full simulation)
+  ? Figure 8 saved (REAL THROUGHPUT DATA)
+  ? Figure 9 saved (REAL UTILITY DATA)
+  ? Figure 10 saved (REAL LLM-Orch data + TFSCM paper values)
+  ? Figure 17 saved (REAL ABLATION DATA)
+
+=============================================================
+FIGURE GENERATION COMPLETE
+=============================================================
+  - All figures use REAL simulation data where available
+  - Skipped figures are missing data (run full simulation)
+  - Results saved to: ./Results/
+=============================================================
